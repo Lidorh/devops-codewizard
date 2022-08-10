@@ -21,7 +21,7 @@
 
 1. Start Jenkins server locally
    ```bash
-   docker-compose -f exercise1/docker-compose.yaml up -d
+   docker-compose -f exercise1/docker-compose.yaml up -d --build
    ```
    
 1. Login to Jenkins server by navigating to http://localhost:8081
