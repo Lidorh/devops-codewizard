@@ -24,7 +24,7 @@
    docker-compose -f exercise1/docker-compose.yaml up -d --build
    ```
    
-1. Login to Jenkins server by navigating to http://localhost:8081
+1. Login to Jenkins server by navigating to http://localhost:8080
 1. Run this command to get the initial admin password
    ```bash
    cat jenkins_home/secrets/initialAdminPassword
