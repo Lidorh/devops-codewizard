@@ -1,0 +1,12 @@
+configuration-as-code
+blueocean-pipeline-editor
+job-dsl
+workflow-job
+workflow-cps
+matrix-auth
+git
+docker-plugin
+docker-workflow
+docker-build-step
+docker-build-publish
+build-pipeline-plugin

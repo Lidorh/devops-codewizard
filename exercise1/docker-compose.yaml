@@ -2,9 +2,17 @@
 version: "3.8"
 services:
   jenkins:
-    image: jenkins/jenkins:2.362-alpine-jdk17 # alpine = smallest size
+   
+    build:
+      context: . # exercise1
+      dockerfile: Dockerfile
+
+    # runtime  
+    user: root # required for docker.sock
+    privileged: true # required for docker.sock
     ports:
-      - 8081:8080
-      - 50001:50000
+      - 8080:8080
+      - 50000:50002
     volumes:
-      - ./jenkins_home:/var/jenkins_home
+      - ./jenkins_home:/var/jenkins_home # jenkins data to be persistent on host
+      - /var/run/docker.sock:/var/run/docker.sock # share host docker-daemon (dockerd) with jenkins
